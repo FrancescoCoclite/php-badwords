@@ -1,8 +1,9 @@
 <?php
     $testo = "Lorem ipsum dolor sit amet, consectetur adipisicing elit";
+    $testo_formattato= strtolower($testo);
     $lunghezza= strlen($testo);
     $censura= $_GET['censura'];
-    $rimpiazzo= str_replace($censura, '***', $testo)
+    $rimpiazzo= str_replace($censura, '***', $testo_formattato);
 ?>
 
 
